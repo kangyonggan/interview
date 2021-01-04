@@ -167,7 +167,7 @@ insert into user(id, name) values(1, '小爱');
 ```mysql
 use demo;
 SET @@session.transaction_isolation = 'SERIALIZABLE';
-SELECT * FROM user; -- 会一直卡主，直到其他事务提交。
+SELECT * FROM user; -- 会一直卡住，直到其他事务提交。
 ```
 
 4. 终端1
